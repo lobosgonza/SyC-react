@@ -22,17 +22,7 @@ app.get("/", function(req, res){
   res.sendFile(__dirname + "/index.html")
 });
 
-app.get("/quienes-somos", function(req, res){
-  res.render("quienes-somos",{page_name: "quienes-somos"})
-});
 
-app.get("/servicios", function(req, res){
-  res.render("servicios",{page_name: "servicios"})
-});
-
-app.get("/contactanos", function(req, res){
-  res.render("contactanos",{page_name: "contactanos"})
-});
 
 app.post("/", function(req,res){
   const nombre = req.body.name;
