@@ -17,9 +17,11 @@ h1,h2,h3,p,li{
   height: 90vh;
   width: 100vh;
     position: relative;
+  
 }
 .separacion-secciones{
-  margin: 10% auto;
+  margin: 10%;
+  padding: 5%;
 }
 
 /* Background*/
@@ -35,6 +37,13 @@ background-image: url("/bg-portada.png");
   background-repeat: no-repeat;
   /* height: 100vh; */
   width:100%;
+}
+.bgGray{
+  background-color: thistle;
+}
+
+.opacity50{
+  background-color: rgba(0, 0, 0, 50%)
 }
 
 /*Navegador*/
@@ -54,4 +63,10 @@ background-image: url("/bg-portada.png");
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);}
+
+
+  /* Img*/
+.imgProps{
+width: 30vh;
+  }
 

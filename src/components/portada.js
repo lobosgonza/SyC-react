@@ -9,15 +9,16 @@ import Media from 'react-bootstrap/Media'
 function Portada(){
 
 return(
-<div className="bgImg">
+    <div className=" bgImg ">
+    <div className="opacity50">
 <Container className="sectionSpace ">
 <Row >
     <Col className="centerDiv" > 
 <Media >
-<div className="align-self-center mr-3">
+<div className="align-self-center mr-3 text-center">
       <h2>¿Quieres hacer una página web para tu negocio?</h2>
           <h1> ¡Nosotros te ayudamos! </h1>
-            <Button variant="outline-warning">Quienes Somos</Button>
+            <Button variant="outline-warning" size="lg">Quienes Somos</Button>
     </div>
 <Media.Body>
         <img src="logo_250w.png"  ></img>
@@ -27,6 +28,7 @@ return(
     </Col>
 </Row>
 </Container>
+</div>
 </div>
 )
 

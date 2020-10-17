@@ -8,15 +8,20 @@ import Button from 'react-bootstrap/Button'
 
 function Servicio(){
 return (
-    <div >
-    <Container>
+  
+    <Container className="separacion-secciones">
   <Row>
+  <Col  className="text-center">
+
       <h1 >¡Que tu idea luzca!</h1>
+     
+</Col>
  </Row>
+
   
   <Row>
    <Col>
- <h3 >Diseño de páginas web</h3>
+ <h3 className="text-center" >Diseño de páginas web</h3>
 
       <ul>
         <li>Creación de plataforma acorde a la identidad de marca.</li>
@@ -28,30 +33,27 @@ return (
    </Col>
    
    <Col>
- <h3 >Diseño de marcas </h3>
+ <h3 className="text-center">Diseño de marcas </h3>
       <ul>
         <li>Creación y proyección de la identidad de la marca.</li>
         <li><strong>Diseño de logotipos</strong> acorde a las necesidades del cliente.</li>
         <li>Diseño de <strong>Slogan</strong></li>
         <li>Generación de piezas gráficas para espacios publicitarios</li>
       </ul>
-   </Col>
-     
+   </Col> 
 </Row>
 
 <Row>
-
+<Col className="text-center">
       <h3>Este servicio incluye un dominio .CL vía “Nic Chile”
   y un servidor web dedicado para tu sitio.</h3>
-  <Button variant="outline-warning">Cotiza con Nosotros</Button>
-
+  <Button variant="outline-warning" size="lg">Cotiza con Nosotros</Button>
+</Col>
   </Row>
 
-
-
-
 </Container>
-  </div>
+
+
 )
 }
 

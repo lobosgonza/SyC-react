@@ -1,5 +1,7 @@
 import React from "react"
 import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
@@ -8,8 +10,16 @@ import Button from 'react-bootstrap/Button'
 function Contacto(){
 return(
     <>
-    <Container>
-        <Form>
+    <Container className="separacion-secciones bgGray" >
+  
+    <Row>
+<Col className="text-center">
+<h3>Escribenos, cuéntanos un poco de tu proyecto y te contactaremos a la brevedad</h3> 
+</Col>
+    </Row>
+    <Row>
+<Col>
+<Form>
 
         <Form.Group controlId="name">
         
@@ -32,10 +42,13 @@ return(
          <Form.Control as="textarea" rows={3} placeholder="Cuéntanos sobre tu idea o proyecto. Te contactaremos a la brevedad." />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button variant="outline-warning" size="lg" type="submit">
     Enviar
   </Button>
     </Form>
+</Col>
+    </Row>
+
    </Container>
 
 

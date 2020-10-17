@@ -6,6 +6,7 @@ import Navegador from "./components/navegador.js";
 import Description from "./components/description.js";
 import Servicio from "./components/servicio.js";
 import Contacto from "./components/contacto.js";
+import Footer from "./components/footer.js";
 
 
 
@@ -17,6 +18,7 @@ function App() {
     <Description/>
     <Servicio/>
     <Contacto/>
+    <Footer/>
 
   </>
   );
