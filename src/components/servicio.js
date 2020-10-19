@@ -11,17 +11,13 @@ return (
   
 <>
 
-      <h1 className="text-center">¡Que tu idea luzca!</h1>
-    <Container>
-
-
-
-  
+      <h1 className="text-center bgOrangeClaro subtitle-box">¡Que tu idea luzca!</h1>
+    <Container className="separacion-secciones">
   <Row>
    <Col>
  <h3 className="text-center" >Diseño de páginas web</h3>
 
-      <ul>
+      <ul className="bgGray">
         <li>Creación de plataforma acorde a la identidad de marca.</li>
         <li>Programación de un sitio web personalizado.</li>
         <li> <strong>Sitio web amigable y responsivo </strong>para teléfonos celulares y computadores.</li>
@@ -32,7 +28,7 @@ return (
    
    <Col>
  <h3 className="text-center">Diseño de marcas </h3>
-      <ul>
+      <ul className="bgGray">
         <li>Creación y proyección de la identidad de la marca.</li>
         <li><strong>Diseño de logotipos</strong> acorde a las necesidades del cliente.</li>
         <li>Diseño de <strong>Slogan</strong></li>

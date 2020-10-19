@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
 
 function Navegador (){
+
+const [state, setState] = useState("bgTransparent");
+
+
+ function listenScrollEvent (e) {
+    if (window.scrollY > 50) {
+      setState( "bgGray scrolledAnimate" );
+   
+    } else {
+      setState("bgTransparent");
+    
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+  });
+
 return (
-<Navbar className="navBar" fixed="top" variant="dark">
+<Navbar className={state} fixed="top" variant="dark">
     <Navbar.Brand href="#home">
       <img className="img-nav" src="icono-nav.svg"/>
       Simple y Creativo

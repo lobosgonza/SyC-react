@@ -6,14 +6,27 @@ import Col from 'react-bootstrap/Col'
 
 function Footer(){
 return(
-<Container>
+    <div className="bgOrangeClaro">
+<Container className="paddingTop">
 
 <Row>
 <Col>
 
+<ul>
+  <li><a>Inicio</a></li>
+  <li><a>Quienes Somos</a></li>
+  <li><a>Servicios</a></li>
+  <li><a>Contacto</a> </li>
+</ul>
 </Col>
 <Col>
-
+    
+</Col>
+<Col>
+    <p>Simple y Creativo</p>
+          <p>+569 659 610 86</p>
+          <p>contacto@simpleycreativo.cl</p>
+          <p>Santiago </p>
 </Col>
 </Row>
 <Row>
@@ -24,6 +37,7 @@ return(
 </Row>
 
 </Container>
+</div>
 )
 }
 
@@ -31,3 +45,6 @@ return(
 
 
 export default Footer
+
+
+
