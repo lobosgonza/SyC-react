@@ -48,13 +48,13 @@ app.post("/", function(req,res){
     method: "POST",
   };
 
-  // const request = https.request( options, function (response){
+  const request = https.request( options, function (response){
 
     if ( res.statusCode === 200 ){
       console.log(data);
-      res.render("success",{page_name: "contactanos"})
+      res.redirect(__dirname + "/")
     } else {
-      res.render("failure",{page_name: "contactanos"})
+      res.redirect(__dirname + "/")
       }
 
     // response.on("data", function(data){
