@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 function QuienesSomos(){
 return (
     <>
-   <h1 className="text-center bgOrangeClaro subtitle-box"> ¿Quienes somos?</h1>
+   <h1 className="text-center bgOrangeClaro subtitle-box bgTexture"> ¿Quienes somos?</h1>
 <Container className="text-center separacion-secciones ">
 <Row>
         <p>  Somos un grupo de amigos que junto con competir por quién ocupaba la mesa para zurdos en la universidad, adquirimos conocimientos gracias a la pandemia que permitirán que tu negocio sea un éxito a través del desarrollo web. ¡Trabajemos juntos para que tu marca se vea, se escuche y funcione bien!</p>

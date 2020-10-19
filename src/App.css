@@ -65,6 +65,10 @@ background-image: url("/bg-portada.png");
 .opacity50{
   background-color: rgba(0, 0, 0, 50%)
 }
+.bgTexture {
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+
+}
 
 /*Navegador*/
 
@@ -83,6 +87,7 @@ background-image: url("/bg-portada.png");
   transition: background-color 1000ms, box-shadow 400ms;
   box-shadow: 0 0 8px #222222;
 }
+
 
 
 

@@ -10,7 +10,7 @@ import Button from 'react-bootstrap/Button'
 function Contacto(){
 return(
     <>
-    <h1 className="bgOrangeClaro subtitle-box text-center">Contacto</h1>
+    <h1 className="bgOrangeClaro subtitle-box text-center bgTexture">Contacto</h1>
     <Container className="separacion-secciones">
   
     <Row>

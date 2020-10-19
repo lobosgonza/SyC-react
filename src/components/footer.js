@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col'
 
 function Footer(){
 return(
-    <div className="bgOrangeClaro">
+    <div className="bgOrangeClaro bgTexture">
 <Container className="paddingTop">
 
 <Row>

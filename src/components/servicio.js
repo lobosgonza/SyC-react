@@ -11,7 +11,7 @@ return (
   
 <>
 
-      <h1 className="text-center bgOrangeClaro subtitle-box">¡Que tu idea luzca!</h1>
+      <h1 className="text-center bgOrangeClaro subtitle-box bgTexture">¡Que tu idea luzca!</h1>
     <Container className="separacion-secciones">
   <Row>
    <Col>
