@@ -24,48 +24,6 @@ app.get("/", function(req, res){
 
 
 
-app.post("/", function(req,res){
-  const nombre = req.body.name;
-  const mail = req.body.email;
-  const texto = req.body.textBox;
-  const numero = req.body.number;
-
-  var data = {
-    members: [{
-      email_address: mail,
-      status: "subscribed",
-      merge_fields:{
-          NAME: nombre,
-          NUMBER: numero,
-          TEXTO: texto,
-          }
-      }]
-  };
-
-  const jsonData = JSON.stringify(data);
-
-  const options = {
-    method: "POST",
-  };
-
-  const request = https.request( options, function (response){
-
-    if ( res.statusCode === 200 ){
-      console.log(data);
-      res.redirect(__dirname + "/")
-    } else {
-      res.redirect(__dirname + "/")
-      }
-
-    // response.on("data", function(data){
-    //   console.log(JSON.parse(data));
-  });
-  // });
-  // request.write(jsonData);
-  // request.end();
-
-// })
-
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server started on port 3000");
