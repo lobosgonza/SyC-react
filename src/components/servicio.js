@@ -9,14 +9,12 @@ import Button from 'react-bootstrap/Button'
 function Servicio(){
 return (
   
-    <Container className="separacion-secciones">
-  <Row>
-  <Col  className="text-center">
+<>
 
-      <h1 >¡Que tu idea luzca!</h1>
-     
-</Col>
- </Row>
+      <h1 className="text-center">¡Que tu idea luzca!</h1>
+    <Container>
+
+
 
   
   <Row>
@@ -47,13 +45,13 @@ return (
 <Col className="text-center">
       <h3>Este servicio incluye un dominio .CL vía “Nic Chile”
   y un servidor web dedicado para tu sitio.</h3>
-  <Button variant="outline-warning" size="lg">Cotiza con Nosotros</Button>
+  <Button className="btnStyle" size="lg">Cotiza con Nosotros</Button>
 </Col>
   </Row>
 
 </Container>
 
-
+</>
 )
 }
 

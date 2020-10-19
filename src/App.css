@@ -4,7 +4,7 @@
 body{
   background-color: black;
 }
-h1,h2,h3,p,li{
+h1,h2,h3,p,li,label{
   color: white;
 }
 
@@ -20,9 +20,12 @@ h1,h2,h3,p,li{
   
 }
 .separacion-secciones{
-  margin: 10%;
+  margin: 10% auto;
   padding: 5%;
 }
+
+
+
 
 /* Background*/
 
@@ -38,10 +41,18 @@ background-image: url("/bg-portada.png");
   /* height: 100vh; */
   width:100%;
 }
-.bgGray{
-  background-color: thistle;
+.bgCeleste{
+  background-color: #99beff
 }
-
+.bgWhite {
+  background-color: #f4f4f4
+}
+.bgOrangeClaro {
+  background-color: #f16821
+}
+.bgOrangeOscuro {
+  background-color: #ad4618
+}
 .opacity50{
   background-color: rgba(0, 0, 0, 50%)
 }
@@ -51,9 +62,20 @@ background-image: url("/bg-portada.png");
 .img-nav{
   width: 50px;
 }
+.navBar {
+  margin-bottom: 20px;
+  transition: background-color 400ms, box-shadow 400ms;
+  background-color: transparent;
 
+}
 
-/*Portada*/
+.navBar.scrolled {
+  background-color: #f4f4f4 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  transition: background-color 400ms, box-shadow 400ms;
+  box-shadow: 0 0 8px #888888;
+}
+
 
 /* Position*/
 
@@ -70,3 +92,21 @@ background-image: url("/bg-portada.png");
 width: 30vh;
   }
 
+
+  /* Button */
+.btnStyle{
+background-color: #f16821;
+  color: #f4f4f4;
+    border: none;
+
+}
+
+.btnStyle:hover {
+  background-color: #f4f4f4;
+  color: #ad4618;
+
+}
+
+.btnStyle:focus {
+  box-shadow:0 0 0 0.2rem #f16821;
+}

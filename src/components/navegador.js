@@ -3,11 +3,9 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
 
-
-
 function Navegador (){
-return(
-<Navbar bg="dark" variant="dark">
+return (
+<Navbar className="navBar" fixed="top" variant="dark">
     <Navbar.Brand href="#home">
       <img className="img-nav" src="icono-nav.svg"/>
       Simple y Creativo

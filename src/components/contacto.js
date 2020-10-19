@@ -10,7 +10,7 @@ import Button from 'react-bootstrap/Button'
 function Contacto(){
 return(
     <>
-    <Container className="separacion-secciones bgGray" >
+    <Container className="separacion-secciones bgCeleste" >
   
     <Row>
 <Col className="text-center">
@@ -42,7 +42,7 @@ return(
          <Form.Control as="textarea" rows={3} placeholder="Cuéntanos sobre tu idea o proyecto. Te contactaremos a la brevedad." />
         </Form.Group>
 
-        <Button variant="outline-warning" size="lg" type="submit">
+        <Button className="btnStyle" size="lg" type="submit">
     Enviar
   </Button>
     </Form>
