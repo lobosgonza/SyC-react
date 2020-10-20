@@ -1,9 +1,9 @@
-//jshint esversion:6
+'use strict';
 
 const express = require("express");
 
 const bodyParser = require("body-parser");
-const https = require ("https");
+
 
 
 const app = express();
@@ -24,7 +24,9 @@ app.get("/", function(req, res){
 
 
 
-
-app.listen(process.env.PORT || 3000, function() {
-  console.log("Server started on port 3000");
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log("Server started on port ${PORT}");
 });
+
+module.exports = app;
